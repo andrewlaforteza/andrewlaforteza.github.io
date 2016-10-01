@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Segoe UI", "Segoe", "Calibri", "Roboto", "Droid Sans", "Meiryo", "Microsoft YaHei", Arial, sans-serif;
+}
+
+.main-nav {
+    height: 50px;
+    z-index: 100;
+    background: #2D3737;
+    font-weight: 200;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    li {
+        min-width: 12em;
+        font-size: 1em;
+        text-align: center;
+        cursor: pointer;
+
+    }
+
+    a {
+        display: block;
+        font-weight: 400;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: .1em;
+        line-height: 50px;
+        height: 45px;
+        color: #FFF;
+
+        &:hover {
+            border-bottom: 5px solid #C8D2D2;
+        }
+    }
+}
