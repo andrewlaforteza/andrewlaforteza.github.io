@@ -29,7 +29,7 @@ body {
 
     a {
         display: block;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 0.9em;
         text-transform: uppercase;
         text-decoration: none;
@@ -38,8 +38,18 @@ body {
         height: 45px;
         color: #FFF;
 
-        &:hover {
+        &.about-link {
+            border-bottom: 5px solid #41D6C3;
+        }
+
+        &:not(.about-link) {
+        }
+
+        &:not(.about-link):hover,
+        &:not(.about-link):focus {
             border-bottom: 5px solid #C8D2D2;
         }
     }
+
+
 }
